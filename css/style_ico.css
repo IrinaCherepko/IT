@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons.ttf?dau6h6') format('truetype'),
+    url('../fonts/icons.woff?dau6h6') format('woff'),
+    url('../fonts/icons.svg?dau6h6#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+ [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ico_call:before {
+  content: "\e900";
+  color: #999;
+  padding-right: 10px;
+
+}
+.icon-ico_mail:before {
+  content: "\e901";
+  color: #999;
+    padding-right: 10px;
+
+}
+.icon-ico_our:before {
+  position: absolute;
+  bottom: 58px;
+  left: 2px;
+  content: "\e902";
+  color: #4985ff;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+.icon-ico_placeholder:before {
+  content: "\e903";
+  color: #999;
+  padding-right: 10px;
+}
+.icon-ico_service:before {
+  content: "\e904";
+  color: #4985ff;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+}
+.icon-menu:before {
+  content: "\e9bd";
+  font-size: 5rem;
+  color:#fff;
+}
